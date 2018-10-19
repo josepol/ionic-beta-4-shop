@@ -1,0 +1,27 @@
+@import '../../../../scss/variables';
+
+.top-header-container {
+    background-color: $dark-red;
+
+    p {
+        color: $white;
+        padding: 8px;
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    a {
+        color: $white;
+        padding-left: 20px;
+        display: block;
+        text-align: center;
+        float: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .row {
+        justify-content: start !important;
+    }
+}

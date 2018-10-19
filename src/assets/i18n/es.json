@@ -1,0 +1,12 @@
+{
+    "TOP_HEADER": {
+        "my_account": "Mi cuenta",
+        "sign_in": "Iniciar sesión",
+        "create_account": "Crear cuenta"
+    },
+    "TOP_BOTTOM_HEADER": {
+        "home": "Home",
+        "new_products": "Productos",
+        "cart": "Carrito"
+    }
+}

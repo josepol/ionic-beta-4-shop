@@ -1,0 +1,30 @@
+input, select {
+    height: 50px;
+    font-size: 14px;
+    padding-left: 20px;
+    border: solid 2px $soft-white;
+    color: $grey;
+    width: 100%;
+    background-color: $white;
+    border-radius: 5px;
+}
+
+input, input:focus, select, select:focus, textarea, textarea:focus {
+    outline: none;
+    border: solid 1px $white;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    overflow: auto;
+    outline: none;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: $white;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 5px;
+    color: $grey;
+}

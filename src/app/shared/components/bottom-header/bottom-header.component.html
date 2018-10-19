@@ -1,0 +1,47 @@
+<div class="top-bottom-header-container">
+    <div class="container large-menu">
+      <div class="row justify-content-between">
+        <div class="hoverable">
+            <div>
+              <a href="javascript:;"><ion-icon class="arrow-icon" md="md-home"></ion-icon> {{ 'TOP_BOTTOM_HEADER.home' | translate }}<ion-icon class="arrow-icon" name=""></ion-icon></a>
+              <div class="sub-menu" (mouseleave)="displayProductsMenu(false)">
+                <a href="javascript:;" [ngClass]="{'bg-dark-red': isProductsMenuOpened}" (mouseenter)="displayProductsMenu(true)"><ion-icon class="arrow-icon" md="md-list-box"></ion-icon> {{ 'TOP_BOTTOM_HEADER.new_products' | translate }} 
+                  <ion-icon *ngIf="!isProductsMenuOpened" class="arrow-icon" name="ios-arrow-down"></ion-icon>
+                  <ion-icon *ngIf="isProductsMenuOpened" class="arrow-icon" ios="ios-arrow-forward" md="ios-arrow-forward"></ion-icon></a>
+                  <div class="new-products-menu-large" [ngClass]="{'display-block': isProductsMenuOpened}">
+                      <div class="padding-left"><a href="javascript:;">{{ 'TOP_BOTTOM_HEADER.home' | translate }}<ion-icon class="arrow-icon" name=""></ion-icon></a></div>
+                      <div class="padding-left"><a href="javascript:;">{{ 'TOP_HEADER.create_account' | translate }}<ion-icon class="arrow-icon" name=""></ion-icon></a></div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div>
+            <p>
+              <a href="javascript:;"><ion-icon class="arrow-icon" md="md-cart"></ion-icon></a>
+              <a href="javascript:;"><ion-icon class="arrow-icon" md="md-search"></ion-icon></a>
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="container small-menu">
+      <div class="row justify-content-end">
+        <a (click)="openMenu()" class="burger" href="javascript:;"><ion-icon name="md-menu"></ion-icon></a>
+      </div>
+      <div class="list-links" [ngClass]="{'display-flex': isMenuOpened}">
+        <div><a href="javascript:;"><ion-icon class="arrow-icon" md="md-home"></ion-icon> {{ 'TOP_BOTTOM_HEADER.home' | translate }}<ion-icon class="arrow-icon" name=""></ion-icon></a></div>
+        <div class="sub-menu">
+          <a href="javascript:;" (click)="displaySmallProductsMenu()"><ion-icon class="arrow-icon" md="md-list-box"></ion-icon> {{ 'TOP_BOTTOM_HEADER.new_products' | translate }} 
+            <ion-icon *ngIf="!isProductsMenuOpened" class="arrow-icon" name="ios-arrow-down"></ion-icon>
+            <ion-icon *ngIf="isProductsMenuOpened" class="arrow-icon" ios="ios-arrow-forward" md="ios-arrow-forward"></ion-icon></a>
+            <div class="new-products-menu" [ngClass]="{'display-block': isProductsMenuOpened}">
+                <div class="padding-left"><a href="javascript:;">{{ 'TOP_BOTTOM_HEADER.home' | translate }}<ion-icon class="arrow-icon" name=""></ion-icon></a></div>
+                <div class="padding-left"><a href="javascript:;">{{ 'TOP_HEADER.create_account' | translate }}<ion-icon class="arrow-icon" name=""></ion-icon></a></div>
+            </div>
+        </div>
+        <div><a href="javascript:;"><ion-icon class="arrow-icon" md="md-home"></ion-icon> {{ 'TOP_HEADER.create_account' | translate }}<ion-icon class="arrow-icon" name=""></ion-icon></a></div>
+        <div><a class="float-right" href="javascript:;"><ion-icon class="arrow-icon" md="md-cart"></ion-icon></a></div>
+        <div><a class="float-right" href="javascript:;"><ion-icon class="arrow-icon" md="md-search"></ion-icon></a></div>
+      </div>
+    </div>
+  </div>
+  
