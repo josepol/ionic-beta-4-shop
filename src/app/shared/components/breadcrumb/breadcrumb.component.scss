@@ -1,0 +1,18 @@
+@import '../../../../scss/variables';
+
+app-breadcrumb {
+    width: 100%;
+}
+
+.breadcrum {
+    background: $white;
+    border-radius: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    color: $soft-black;
+
+    .sub-bread {
+        color: $grey;
+    }
+}

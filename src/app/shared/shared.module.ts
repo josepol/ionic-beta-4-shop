@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TopHeaderComponent } from './components/top-header/top-header.component';
 import { BottomHeaderComponent } from './components/bottom-header/bottom-header.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 
 @NgModule({
   imports: [
@@ -10,13 +11,15 @@ import { TranslateModule } from '@ngx-translate/core';
     TranslateModule
   ],
   exports: [
+    TranslateModule,
     TopHeaderComponent,
     BottomHeaderComponent,
-    TranslateModule
+    BreadcrumbComponent
   ],
   declarations: [
     TopHeaderComponent,
-    BottomHeaderComponent
+    BottomHeaderComponent,
+    BreadcrumbComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

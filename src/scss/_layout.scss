@@ -4,13 +4,20 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: none !important;
     display: block !important;
-    background-color: $soft-white !important;
-}
-
-.container {
-    
+    background-color: $bg-white !important;
 }
 
 a, a:hover, a:focus {
     text-decoration: none !important;
+}
+
+.arrow-icon {
+    position: relative;
+    top: 2px;
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 90%;
+    }
 }

@@ -8,5 +8,9 @@
         "home": "Home",
         "new_products": "Productos",
         "cart": "Carrito"
+    },
+    "FILTER": {
+        "category": "Categoría",
+        "price": "Precio"
     }
 }

@@ -1,0 +1,9 @@
+@import '../../../../scss/variables';
+
+.category {
+    background: $white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-top: solid 3px $red;
+    border-radius: 2px;
+}

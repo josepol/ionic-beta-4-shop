@@ -1,0 +1,32 @@
+@import '../../../../scss/variables';
+
+.parent {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.widgets {
+    overflow-x: scroll;
+    width:100%;
+
+    .widget {
+        width: 100px;
+        height: 140px;
+        background-color: $white;
+        padding: 10px;
+        margin-left: 30px;
+        display:inline-block;
+    }
+    
+    .widget-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .title {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
