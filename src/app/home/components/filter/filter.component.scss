@@ -1,9 +1,27 @@
 @import '../../../../scss/variables';
 
 .category {
-    background: $white;
-    padding: 10px;
+    background: $soft-grey;
     margin-bottom: 10px;
     border-top: solid 3px $red;
     border-radius: 2px;
+
+    .category-content {
+        background-color: $white;
+        margin-top: 5px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .title {
+        cursor: pointer;
+    }
+
+    hr {
+        border-color: $soft-grey;
+    }
+
+    p {
+        padding: 10px
+    }
 }

@@ -1,8 +1,19 @@
 <div class="pd-10">
   <div class="category">
-    <p><ion-icon class="arrow-icon" name="md-arrow-dropright"></ion-icon> {{ 'FILTER.category' | translate }}</p>
+    <p (click)="openCategory()" class="title pd-10"><ion-icon class="arrow-icon" name="md-arrow-dropright"></ion-icon> {{ 'FILTER.category' | translate }}</p>
+    <div class="category-content">
+      <p>Hombre</p>
+      <hr/>
+      <p>Mujer</p>
+    </div>
   </div>
   <div class="category">
-    <p><ion-icon class="arrow-icon" name="md-arrow-dropright"></ion-icon> {{ 'FILTER.price' | translate }}</p>
+    <p class="pd-10"><ion-icon class="arrow-icon" name="md-arrow-dropright"></ion-icon> {{ 'FILTER.price' | translate }}</p>
+  </div>
+  <div class="category">
+    <p class="pd-10"><ion-icon class="arrow-icon" name="md-arrow-dropright"></ion-icon> {{ 'FILTER.brand' | translate }}</p>
+  </div>
+  <div class="category">
+    <p class="pd-10"><ion-icon class="arrow-icon" name="md-arrow-dropright"></ion-icon> {{ 'FILTER.color' | translate }}</p>
   </div>
 </div>

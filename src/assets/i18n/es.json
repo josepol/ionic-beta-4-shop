@@ -11,6 +11,8 @@
     },
     "FILTER": {
         "category": "Categoría",
-        "price": "Precio"
+        "price": "Precio",
+        "brand": "Marca",
+        "color": "Color"
     }
 }
